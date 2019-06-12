@@ -1,0 +1,71 @@
+.form-discret{
+	font-size: 16px;
+	/* padding: 30px 30px 15px 30px;
+	border: 5px solid #53687E; */
+}
+.form-discret input[type=submit],
+.form-discret input[type=button],
+.form-discret input[type=text],
+.form-discret input[type=email],
+.form-discret input[type=password],
+.form-discret textarea,
+.form-discret label
+{
+	color: #aaa;
+  font-family: sans-serif;
+  font-size: 16px;
+  width: 84%;
+}
+.form-discret label {
+	display:block;
+	margin-bottom: 10px;
+}
+.form-discret label > span{
+	display: inline-block;
+	float: left;
+	width: 150px;
+}
+.form-discret input[type=text],
+.form-discret input[type=email],
+.form-discret input[type=password]
+{
+	background: transparent;
+	border: none;
+	/* border-bottom: 2px solid #222; */
+	outline: none;
+	padding: 0px 2px 0px 2px;
+}
+.form-discret textarea{
+	font-style: italic;
+	padding: 0px 0px 0px 0px;
+	background: transparent;
+	outline: none;
+	border: none;
+	border-bottom: 1px dashed #83A4C5;
+	width: 275px;
+	overflow: hidden;
+	resize:none;
+	height:20px;
+}
+
+.form-discret textarea:focus,
+.form-discret input[type=text]:focus,
+.form-discret input[type=email]:focus,
+.form-discret input[type=email]:focus,
+.form-discret input[type=password]:focus
+{
+	/* border-bottom: 2px solid #ccc; */
+}
+
+.form-discret input[type=submit],
+.form-discret input[type=button]{
+	background: #576E86;
+	border: none;
+	padding: 8px 10px 8px 10px;
+	border-radius: 5px;
+	color: #A8BACE;
+}
+.form-discret input[type=submit]:hover,
+.form-discret input[type=button]:hover{
+background: #394D61;
+}

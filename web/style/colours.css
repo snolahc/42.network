@@ -1,0 +1,44 @@
+body {
+  background-color: black;
+  font-family: monospace, sans-serif;
+  font-size: 16px;
+  color: #aaa;
+}
+
+a {
+  font-family: monospace, sans-serif;
+  color: #aaa;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.21s;
+	-webkit-transition: all 0.21s;
+  -o-transition: all 0.21s;
+  -moz-transition: all 0.21s;
+}
+
+a:focus {
+	outline: none !important;
+  background-color: #ccc;
+  color: #21252b;
+}
+
+a:hover {
+  background-color: #ccc;
+  color: #21252b;
+}
+
+a:visited {
+  text-decoration: underline;
+}
+
+.header {
+}
+
+.main {
+  /* background-color: rgb(16, 0, 0); */
+  background-color: #21252b);
+}
+
+iframe {
+  background-color: #282c34;
+}
