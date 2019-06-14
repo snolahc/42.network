@@ -10,18 +10,9 @@ a {
   color: #aaa;
   text-decoration: none;
   font-weight: bold;
-  transition: all 0.21s;
-	-webkit-transition: all 0.21s;
-  -o-transition: all 0.21s;
-  -moz-transition: all 0.21s;
 }
 
-a:focus {
-	outline: none !important;
-  background-color: #ccc;
-  color: #21252b;
-}
-
+a:focus,
 a:hover {
   background-color: #ccc;
   color: #21252b;
@@ -41,4 +32,9 @@ a:visited {
 
 iframe {
   background-color: #282c34;
+}
+
+.window-close:hover {
+  background-color: #a00;
+  color: black;
 }

@@ -63,7 +63,35 @@ iframe {
 }
 
 .window {
-  margin: 0px 5px 0px 5px;
+  margin: 0px 5px 0px 0px;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.window-head {
+  background-color: #21252b;
+  width: 100%;
+  height: 32px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+
+.window-close {
+  width: 32px;
+  height: 32px;
+  border-left: 2px solid black;
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  visibility: none;
+}
+
+.visible {
+  visibility: visible;
 }
 
 .cd {
