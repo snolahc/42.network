@@ -17,8 +17,8 @@
   </head>
   <body>
     <div class="prompt">
-      <a href="action/user" target="user" onclick="document.getElementById('window-user').style.display = 'flex';"><?php echo $login; ?></a>:
-      <a href="action/cd" target="cd" onclick="document.getElementById('window-cd').style.display = 'flex';">~</a> $
+      <a href="#" onclick="toggle(document.getElementById('window-user'));"><?php echo $login; ?></a>:
+      <a href="#" onclick="toggle(document.getElementById('window-cd'));">~</a> $
         <form class="form-discret shell" action="action/console" target="console" method="post" autocomplete="off">
           <label for="command" style="display:none">Command</label>
           <input class="shell" name="command" type="text" value="" autofocus>
@@ -43,7 +43,7 @@
       </script>
 
 
-      <div class="content">
+      <div class="content" style="display:none;">
         <iframe name="console" class="window-space console" src="action/console"></iframe>
         <iframe name="time" class="window-space time" src="action/time"></iframe>
         <iframe name="42" class="window-space 42" src="action/42"></iframe>

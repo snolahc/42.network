@@ -8,29 +8,27 @@
 
     <style media="screen">
       body {
+        background-color: #282c34;
         color: #ccc;
       }
     </style>
 
   </head>
   <body>
-    <ul>
-      <li>
-        <a href="#" onclick="toggle(getElementById('ul-login'))">login</a>
-        <ul id="ul-login" style="display: none;">
-          <li><a href="#">username</a></li>
-          <li><a href="#">password</a></li>
-          <li><a href="#">connect</a></li>
-        </ul>
-        <ul style="display: none;">
+
+   <ul>
+     <li><a href="#" onclick="toggle(getElementById('ul-login'))">login</a>
+     <ul id="ul-login" style="display: flex; flex-direction: column;">
+       <li><a href="#"><input type="text" /></a></li>
+       <li><a href="#"><input type="text" /></a></li>
+       <li><a href="#"><input type="button" value="login" /></a></li>
+     </ul></li>
+        <!-- <ul style="display: none;">
           <li><a href="#">google</a></li>
           <li><a href="#">facebook</a></li>
           <li><a href="#">github</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="#">register</a>
-      </li>
+        </ul> -->
+      <li><a href="#">register</a></li>
       <li>
         <a href="#">region</a>
       </li>
