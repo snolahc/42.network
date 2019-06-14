@@ -18,7 +18,7 @@
   <body>
     <div class="prompt">
       <a href="#" onclick="toggle(document.getElementById('window-user'));"><?php echo $login; ?></a>:
-      <a href="#" onclick="toggle(document.getElementById('window-cd'));">~</a> $
+      <a href="#" onclick="toggle(document.getElementById('window-files'));">~</a> $
         <form class="form-discret shell" action="action/console" target="console" method="post" autocomplete="off">
           <label for="command" style="display:none">Command</label>
           <input class="shell" name="command" type="text" value="" autofocus>
@@ -27,19 +27,19 @@
     </div>
 
     <span class="actions">
-      <div class="window" id="window-cd">
-        <div class="window-head"><span class="window-title">&nbsp;files</span><span class="window-close"  onclick="document.getElementById('window-cd').style.display = 'none';">x</span></div>
-        <iframe name="cd" class="window-space cd" src="action/cd"></iframe>
+      <div class="window" id="window-files">
+        <div class="window-head"><span class="window-title">&nbsp;files</span><span class="window-close"  onclick="document.getElementById('window-files').style.display = 'none';">x</span></div>
+        <iframe name="cd" class="window-space files" src="files/"></iframe>
       </div>
 
       <div class="window" id="window-user">
         <div class="window-head"><span class="window-title">&nbsp;user</span><span class="window-close" onclick="document.getElementById('window-user').style.display = 'none';">x</span></div>
-        <iframe name="user" class="window-space user" src="action/user"></iframe>
+        <iframe name="user" class="window-space user" src="user/"></iframe>
       </div>
 
       <script type="text/javascript">
         document.getElementById('window-user').style.display = 'none';
-        document.getElementById('window-cd').style.display = 'none';
+        document.getElementById('window-files').style.display = 'none';
       </script>
 
 

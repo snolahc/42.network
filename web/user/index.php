@@ -3,8 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>action/user</title>
-    <link rel="stylesheet" type="text/css" href="../../style/colours.css">
-    <script type="text/javascript" src="../../js/functions.js"></script>
+    <link rel="stylesheet" type="text/css" href="../style/colours.css">
+    <script type="text/javascript" src="../js/functions.js"></script>
 
     <style media="screen">
       body {
