@@ -17,28 +17,38 @@
 
 <?php
 $root = "data";
-$path = "/";
+$path = ($_GET['path'] ? $_GET['path'] : '/');
 $pwd = $root . $path;
 $fh = scandir($pwd);
 
-if (is_writable($pwd)) {
-  echo "+ file<br />";
-  echo "+ folder<br /><br />";
-}
 echo $path;
 echo "<ul>";
 foreach ($fh as $key => $value) {
-  if ($value == "." || ($value == ".." && $path == "/")) {
+  if ($value == ".." && $path == "/") {
+    continue;
+  } elseif ($value == '.') {
+    echo '<li>.</li>';
+    continue;
+  }
+    elseif ($value == "..") {
+    $newpwd = '/' . implode('/', array_pop(explode('/', $path)));
+    $link = 'index.php?path=' . $newpwd . '&oldpwd=' . urlencode($path);
+    echo '<li><a href="' . $link . '">' . $value . '</a></li>';
     continue;
   }
   if (is_dir($pwd . $value)) {
-    $link = '?path=' . $path . $value . '&oldpwd=' . $path . '&#47;';
+    $link = 'index.php?path=' . urlencode($path) . urlencode($value) . '&oldpwd=' . urlencode($path);
     echo '<li><a href="' . $link . '">' . $value . '</a></li>';
   } else {
     echo "<li>" . $value . "</li>";
   }
 }
 echo "</ul>";
+if (is_writable($pwd)) {
+  echo "+ upload files<br />";
+  echo "+ text<br />";
+  echo "+ folder<br /><br />";
+}
  ?>
 
 

@@ -39,7 +39,7 @@
 
       <script type="text/javascript">
         document.getElementById('window-user').style.display = 'none';
-        document.getElementById('window-files').style.display = 'none';
+        // document.getElementById('window-files').style.display = 'none';
       </script>
 
 
